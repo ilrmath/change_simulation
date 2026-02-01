@@ -106,18 +106,18 @@
 
 <div class="flex-container">
     <div class="card">
-        <h2>乱数と支払い（客は定価240円のぬいぐるみ🐈を1つ買います）</h2>
+        <h2>乱数と支払い</h2>
         <div class="mini-table-wrapper">
             <table class="mini-table">
                 <thead>
                     <tr><th>支払い</th><th>お釣りの内容</th><th>乱数範囲</th></tr>
                 </thead>
                 <tbody>
-                    <tr id="row-0"><td>100x2 + 10x4枚</td><td>なし</td><td>0.00≦x＜0.20</td></tr>
-                    <tr id="row-1"><td>100x1+50x2+10x4</td><td>なし</td><td>0.20≦x＜0.40</td></tr>
-                    <tr id="row-2"><td>300円(100x3)</td><td>50円+10x1</td><td>0.40≦x＜0.60</td></tr>
-                    <tr id="row-3"><td>500円玉</td><td>100x2, 50x1, 10x1</td><td>0.60≦x＜0.80</td></tr>
-                    <tr id="row-4"><td>1000円札</td><td>500x1, 100x2, 50x1, 10x1</td><td>0.80≦x＜1.00</td></tr>
+                    <tr id="row-0"><td>100円玉x2と10円玉x4枚</td><td>なし</td><td>0.00≦x＜0.20</td></tr>
+                    <tr id="row-1"><td>100円玉x1と50円玉x2と10円玉x4</td><td>なし</td><td>0.20≦x＜0.40</td></tr>
+                    <tr id="row-2"><td>100円玉x3</td><td>50円玉+10円玉x1</td><td>0.40≦x＜0.60</td></tr>
+                    <tr id="row-3"><td>500円玉x1</td><td>100円玉x2, 50円玉x1, 10円玉x1</td><td>0.60≦x＜0.80</td></tr>
+                    <tr id="row-4"><td>1000円札x1</td><td>500円玉x1, 100円玉x2, 50円玉x1, 10円玉x1</td><td>0.80≦x＜1.00</td></tr>
                 </tbody>
             </table>
         </div>
@@ -128,11 +128,12 @@
         </div>
 
         <div class="card info-card">
-            <p>【シミュレーションの目的】</p>
+            <p>【シミュレーションについて】</p>
             <ul>
-                <li><strong>等確率:</strong> 乱数を5等分し公平に検証します。</li>
-                <li><strong>変動:</strong> 10円玉の増減によるデッドヒートを観察。</li>
-                <li><strong>管理:</strong> 最小値から必要な準備枚数を算出します。</li>
+                <li><strong>概要:</strong> 客は定価240円のぬいぐるみ🐈を1つ買います。<br>　客の上のように5通りの支払い方法のどれかを等確率で選びます。</li>
+                <li><strong>確率:</strong> 乱数🎲(0以上1未満)を1つ発生させ、<br>　上の表に従いどの支払い方法を選ぶかを決めます。</li>
+                <li><strong>変動:</strong> 客の数を増やし、硬貨・紙幣枚数の変動をシミュレートします。</li>
+                <li><strong>管理:</strong> 最小値から必要な準備枚数を予測します。</li>
             </ul>
         </div>
     </div>
